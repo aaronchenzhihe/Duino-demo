@@ -21,13 +21,13 @@ LED引脚共地，当正负极形成电压差时，LED点亮，所以高电平LE
 
  
 
-![](..\media\led4.png)
+![](../media/led4.png)
 
 ## 三、 操作步骤
 
 请参考目录中的开发指导手册
 
-![](..\media\test1.png)
+![](../media/test1.png)
 
 ## 四、 驱动代码
 
@@ -56,7 +56,7 @@ def set_color(red, green, blue):
 
   b.write(blue)
 
-\#排列组合展示多种灯色
+/#排列组合展示多种灯色
 
 while True:
 

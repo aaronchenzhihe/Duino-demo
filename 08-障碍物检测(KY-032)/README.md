@@ -6,7 +6,7 @@
 
 **模块组成：**
 
-![](..\media\obstacle1.png)
+![](../media/obstacle1.png)
 
 **工作原理：**
 
@@ -26,13 +26,13 @@
 
  
 
-![](..\media\obstacle2.png)
+![](../media/obstacle2.png)
 
 ## 三、 操作步骤
 
 请参考目录中的开发指导手册
 
-![](..\media\test1.png)
+![](../media/test1.png)
 
 ## 四、 驱动代码
 
@@ -41,7 +41,7 @@ gpio = Pin(Pin.GPIO31, Pin.IN, Pin.PULL_DISABLE)
 
 def main():
 
-  \# 假设传感器检测到倾斜时输出高电平（1）
+  /# 假设传感器检测到倾斜时输出高电平（1）
 
   while True:
 

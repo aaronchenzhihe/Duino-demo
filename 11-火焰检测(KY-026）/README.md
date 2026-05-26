@@ -27,13 +27,13 @@
 
  
 
-![](..\media\flame1.png)
+![](../media/flame1.png)
 
 ## 三、 操作步骤
 
 请参考目录中的开发指导手册
 
-![](..\media\test1.png)
+![](../media/test1.png)
 
 ## 四、 驱动代码
 
@@ -72,7 +72,7 @@ gpio1=Pin(Pin.GPIO30,Pin.OUT,Pin.PULL_DISABLE,0)
 
 def main():
 
-  \# 假设传感器检测到火焰时输出低电平（0）
+  /# 假设传感器检测到火焰时输出低电平（0）
 
   while True:
 

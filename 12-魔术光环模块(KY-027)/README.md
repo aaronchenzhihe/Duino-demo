@@ -6,7 +6,7 @@
 
 **工作原理：**
 
-![](..\media\magic1.png)
+![](../media/magic1.png)
 
 模块有供电、接地、信号输出、LED 控制端。倾斜到一定角度时，水银开关导通 / 断开，输出高低电平；可通过 GPIO 控制 LED 亮灭，实现倾斜亮灯、姿态报警等效果。
 
@@ -23,18 +23,18 @@
 
  
 
-![](..\media\magic2.png)
+![](../media/magic2.png)
 
 ## 三、 操作步骤
 
 请参考目录中的开发指导手册
 
-![](..\media\test1.png)
+![](../media/test1.png)
 
 ## 四、 驱动代码
 
 ```python
-\# 配置GPIO为输入，上拉
+/# 配置GPIO为输入，上拉
 
 gpio = Pin(Pin.GPIO31, Pin.IN, Pin.PULL_PU)
 
@@ -42,7 +42,7 @@ gpio1=Pin(Pin.GPIO30,Pin.OUT,Pin.PULL_DISABLE,0)
 
 def main():
 
-  \# 假设传感器检测到倾斜时输出高电平（1）
+  /# 假设传感器检测到倾斜时输出高电平（1）
 
   while True:
 

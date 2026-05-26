@@ -21,13 +21,13 @@
 
  
 
-![](..\media\aht20.png)
+![](../media/aht20.png)
 
 ## 三、 操作步骤
 
 请参考目录中的开发指导手册
 
-![](..\media\test1.png)
+![](../media/test1.png)
 
 ## 四、 驱动代码
 
@@ -46,11 +46,11 @@ class aht20(object):
 
      self.slave_addr = 0x38# AHT20 slave address
 
-     self.RESET_CMD = b'\xBA'# reset command
+     self.RESET_CMD = b'/xBA'# reset command
 
-     self.INIT_CMD = b'\xE1'# initialize command
+     self.INIT_CMD = b'/xE1'# initialize command
 
-     self.MEASURE_CMD = b'\xAC\x33\x00'# measure command
+     self.MEASURE_CMD = b'/xAC/x33/x00'# measure command
 
  
 
@@ -58,7 +58,7 @@ class aht20(object):
 
   def reset(self):
 
-     self.i2c.write(self.slave_addr,b'\x00',0,self.RESET_CMD,len(self.RESET_CMD))
+     self.i2c.write(self.slave_addr,b'/x00',0,self.RESET_CMD,len(self.RESET_CMD))
 
      sleep_ms(20)# wait 20ms
 
@@ -66,27 +66,27 @@ class aht20(object):
 
   def init(self):
 
-     self.i2c.write(self.slave_addr,b'\x00',0,self.INIT_CMD,len(self.INIT_CMD))
+     self.i2c.write(self.slave_addr,b'/x00',0,self.INIT_CMD,len(self.INIT_CMD))
 
  
 
   def read(self):
 
-     \# Send measurement cmd to trigger data acquirement.
+     /# Send measurement cmd to trigger data acquirement.
 
-     self.i2c.write(self.slave_addr,b'\x00',0,self.MEASURE_CMD,len(self.MEASURE_CMD))
+     self.i2c.write(self.slave_addr,b'/x00',0,self.MEASURE_CMD,len(self.MEASURE_CMD))
 
  
 
-     \#read data
+     /#read data
 
-     \#wait for data ready (at least 80ms)
+     /#wait for data ready (at least 80ms)
 
      sleep_ms(80)
 
      r_data = bytearray([0x00]*6)
 
-     self.i2c.read(self.slave_addr,b'\x00',0,r_data,6,80)
+     self.i2c.read(self.slave_addr,b'/x00',0,r_data,6,80)
 
      busy = 0#r_data[0]>>7
 

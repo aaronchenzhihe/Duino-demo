@@ -10,11 +10,11 @@
 
 **光敏电阻组成：**
 
-![](..\media\light1.png)
+![](../media/light1.png)
 
 **工作原理：**
 
-![](..\media\light2.png)
+![](../media/light2.png)
 
 **光照越强，电阻越小，电压越低；光照越弱，电阻越大，电压越高。**
 
@@ -30,13 +30,13 @@
 
  
 
-![](..\media\light3.png)
+![](../media/light3.png)
 
 ## 二、 操作步骤
 
 请参考目录中的开发指导手册
 
-![](..\media\test1.png)
+![](../media/test1.png)
 
 ## 三、 驱动代码
 

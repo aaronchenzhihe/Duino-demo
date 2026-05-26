@@ -24,18 +24,18 @@
 
  
 
-![](..\media\display1.png)
+![](../media/display1.png)
 
 ## 三、 操作步骤
 
 请参考目录中的开发指导手册
 
-![](..\media\test1.png)
+![](../media/test1.png)
 
 ## 四、 驱动代码
 
 ```
-\# 初始化数码管各段 GPIO
+/# 初始化数码管各段 GPIO
 
 seg32 = Pin(Pin.GPIO32, Pin.OUT, Pin.PULL_DISABLE, 1)  # 右下 a
 
@@ -53,9 +53,9 @@ seg14 = Pin(Pin.GPIO14, Pin.OUT, Pin.PULL_DISABLE, 1)  # 左下 g
 
 seg15 = Pin(Pin.GPIO15, Pin.OUT, Pin.PULL_DISABLE, 1)  # 左上 h
 
-\# 段码表：0~9 对应各段亮灭（0亮1灭）
+/# 段码表：0~9 对应各段亮灭（0亮1灭）
 
-\# 顺序：a b c d e f g h
+/# 顺序：a b c d e f g h
 
 num_table = [
 
@@ -109,7 +109,7 @@ def display_num(n):
 
  
 
-\# 循环显示 0-9
+/# 循环显示 0-9
 
 while True:
 
